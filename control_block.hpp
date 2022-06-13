@@ -35,22 +35,25 @@ namespace CB{ // control block
     return c;
   }
 
-  void command(){
+  void command(Cesar& c){
     bool work = true;
     while(work){
       std::string comm;
+      std::cout << "\n========\n";
       std::cout << "Enter what you want to do ( shifr / unshift / exit )\n>>";
       std::cin >> comm;
 
       if(comm == "shifr"){
+        c.shifr();
         continue;
       }
       if(comm == "unshifr"){
+        c.unshifr();
         continue;
       }
       if(comm == "exit"){
-        std::cout << "Programm ended";
-        exit(0));
+        std::cout << "Programm ended\n";
+        exit(0);
       }
     }
   }

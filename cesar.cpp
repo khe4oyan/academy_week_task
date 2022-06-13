@@ -7,5 +7,5 @@
 
 int main(){
   Cesar c = CB::get_info();
-  CB::command();
+  CB::command(c);
 }
